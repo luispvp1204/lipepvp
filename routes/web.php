@@ -24,3 +24,7 @@ $ra = 22021048;
 Route::get('/teste', function () {
     return view('teste');
 });
+
+Route::get('/teste/{id}', function ($id) {
+    return view('test',['id' =>$id]);
+});
