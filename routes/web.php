@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+$nome  ="lipe";
+$ra = 22021048;
+
+    return view('welcome',["nome" =>$nome, "ra" => $ra]);
+});
+
+Route::get('/teste', function () {
+    return view('teste');
 });
