@@ -13,19 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+use app\http\controllers\alunocontroller;
 
-$nome  ="lipe";
-$ra = 22021048;
-$arr = [1,2,3,4,5];
-
-    return view('welcome',["nome" =>$nome, "ra" => $ra , 'arr'=> $arr]);
-});
-
-Route::get('/teste', function () {
-    return view('teste');
-});
-
-Route::get('produto/{id}', function ($id=1) {
-    return view('product',['id' =>$id]);
+Route::get('/',[alunocontroller::class, 'index']);
+    
+    
+    Route::get('/teste', function () {
+        return view('teste');
+    });
+    
+    Route::get('produto/{id}', function ($id=1) {
+        return view('product',['id' =>$id]);
 });

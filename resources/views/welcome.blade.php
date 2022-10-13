@@ -18,7 +18,26 @@
 
 
 <h1> Titulo  <h1>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="collapse navbar-collapse" id="navbar">
+        <a href="/" class="navbar-brand">
+            <img src="/img/images.jpg" alt="images">
+        </a>
+        <ul class="navbar-nav"></ul>
+        <li class="nav-item">
+           <a href="/" class="nav-link">professores</a>
+        </li>
+        <li class="nav-item">
+           <a href="/" class="nav-link">alunos</a>
+        </li>
+        <li class="nav-item">
+           <a href="/" class="nav-link">materias</a>
+        </li>
 
+    </div>
+</nav>
+<header>
     @if (10 > 5)
     <h1> a condicao e true <h1>
 

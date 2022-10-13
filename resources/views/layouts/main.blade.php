@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title> @yield('title') <title>
+        <title> @yield( 'title' ) <title>
         
      
 
@@ -16,7 +16,7 @@
                 
  @yield ('content')
     <footer>
-    <p> HDC Event &copy; 2020 <p>
+    <p>HDC Event &copy; 2020 <p>
         <footer>
     </body>
 </html>
