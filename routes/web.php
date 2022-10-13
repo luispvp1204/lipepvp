@@ -17,8 +17,9 @@ Route::get('/', function () {
 
 $nome  ="lipe";
 $ra = 22021048;
+$arr = [1,2,3,4,5];
 
-    return view('welcome',["nome" =>$nome, "ra" => $ra]);
+    return view('welcome',["nome" =>$nome, "ra" => $ra , 'arr'=> $arr]);
 });
 
 Route::get('/teste', function () {
