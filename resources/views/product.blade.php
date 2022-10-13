@@ -13,36 +13,9 @@
         <link rel ="stylesheet" href="/css/styles.css">
         <script src="js/scripts.js"></script>
 
-<head>
+        <head>
 </body>
+<p> exibindo produto id: {{ $id }}<p>
 
-
-<h1> Titulo  <h1>
-
-    @if (10 > 5)
-    <h1> a condicao e true <h1>
-
-        @endif
-
-        <p>{{ $nome }}  <p>
-
-            @if($nome = "pedro")
-            <p>  o nome e pedro <p>
-                @elseif ($nome = "lipe")
-                <p> o nome e lipe <P>
-                @else
-                <p> o nome e pedro <p>
-                    @endif
-
-                    @for ($i= 0 ; $i < count ($arr); $i++)
-                    <P>{{ $arr[$i] }} <p>
-                        @endfor
-
-
-                       
-                        </body>
-</html>                      
-
-                        
-
-      
+</body>
+</html>

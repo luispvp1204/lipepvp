@@ -26,6 +26,6 @@ Route::get('/teste', function () {
     return view('teste');
 });
 
-Route::get('/teste/{id}', function ($id) {
-    return view('test',['id' =>$id]);
+Route::get('produto/{id}', function ($id=1) {
+    return view('product',['id' =>$id]);
 });
