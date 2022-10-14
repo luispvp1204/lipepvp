@@ -16,7 +16,7 @@
                 
  @yield ('content')
     <footer>
-    <p>HDC Event &copy; 2020 <p>
-        <footer>
+    <p>HDCaa Event &copy; 2020 <p>
+        <footer> 
     </body>
 </html>
