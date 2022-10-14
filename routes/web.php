@@ -14,17 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+use App\Http\Controllers\EventController;
 
+Route::get('/', [EventController::class, 'index']); 
+Route::get('/events/create', [EventController::class, 'create']); 
 
     
     
-    Route::get('/', function () {
-        $nome = 'lipe';
-
-        $arr = [1,2,3,4,5];
-
-        return view('welcome',['nome' => $nome, 'arr' => $arr]);
-    });
     
     Route::get('produto/{id}', function ($id=1) {
         return view('product',['id' =>$id]);

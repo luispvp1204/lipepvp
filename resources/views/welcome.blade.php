@@ -26,7 +26,7 @@
         </a>
         <ul class="navbar-nav"></ul>
         <li class="nav-item">
-           <a href="/" class="nav-link">professores</a>
+           <a href="/events/create" class="nav-link">professores</a>
         </li>
         <li class="nav-item">
            <a href="/" class="nav-link">alunos</a>
