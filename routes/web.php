@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use app\http\controllers\alunocontroller;
 
-Route::get('/',[alunocontroller::class, ' index']);
-    
+
     
     Route::get('/teste', function () {
         return view('teste');
