@@ -15,11 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
     
-    Route::get('/teste', function () {
-        return view('teste');
+    
+    Route::get('/', function () {
+        $nome = 'lipe';
+
+        $arr = [1,2,3,4,5];
+
+        return view('welcome',['nome' => $nome, 'arr' => $arr]);
     });
     
     Route::get('produto/{id}', function ($id=1) {
         return view('product',['id' =>$id]);
-});
+}); 
