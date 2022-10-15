@@ -17,7 +17,7 @@
 </body>
 
 
-<h1> Titulo  <h1>
+
 <header>
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="collapse navbar-collapse" id="navbar">
@@ -38,10 +38,29 @@
     </div>
 </nav>
 <header>
-@foreach($professores as $event)
-<p> {{ $professores -> professor }} -- {{ $professores -> aluno }} <p>
-@endforeach
-                       
+
+<div id="search-container" class="col-md-12">
+    <h1> Busque um aluno <h1>
+        <form action= "" >
+          <input type= "text" id ="search" class="form-control" placeholder ="procurar...">
+        <form>
+     <div>          
+        <div id="events-container" class ="col-md-12">
+          <h2> todos alunos <h2>  
+            
+                <div id= "cards-container" class = "row">
+                    @foreach ($events as $event)
+                    <div class = "cards col-md-3">
+                      <img  src="/img/lipe.jpg" alt = "{{$event->aluno}}">
+                      <h5  class= "card-title">{{$event->aluno}} <h5>
+                    <div>
+
+                    @endforeach
+                <div>
+        <div>
+     
+
+
                         </body>
 </html>                      
 
