@@ -38,27 +38,9 @@
     </div>
 </nav>
 <header>
-    @if (10 > 5)
-    <h1> a condicao e true <h1>
-
-        @endif
-
-        <p>{{ $nome }}  <p>
-
-            @if($nome = "pedro")
-            <p>  o nome e pedro <p>
-                @elseif ($nome = "lipe")
-                <p> o nome e lipe <P>
-                @else
-                <p> o nome e pedro <p>
-                    @endif
-
-                    @for ($i= 0 ; $i < count ($arr); $i++)
-                    <P>{{ $arr[$i] }} <p>
-                        @endfor
-
-                        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+@foreach($professores as $event)
+<p> {{ $professores -> professor }} -- {{ $professores -> aluno }} <p>
+@endforeach
                        
                         </body>
 </html>                      
